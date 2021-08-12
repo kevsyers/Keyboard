@@ -1,0 +1,105 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+body .white, body .black {
+  position: relative;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0.5rem 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+body .white {
+  height: 12.5rem;
+  width: 3.5rem;
+  z-index: 1;
+  border-left: 1px solid #bababa;
+  border-bottom: 1px solid #bababa;
+  border-radius: 0 0 5px 5px;
+  -webkit-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.8) inset, 0 0 5px #cccccc inset, 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: -1px 0 0 rgba(255, 255, 255, 0.8) inset, 0 0 5px #cccccc inset, 0 0 3px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+body .black {
+  height: 8rem;
+  width: 2rem;
+  margin: 0 0 0 -1rem;
+  z-index: 2;
+  border: 1px solid black;
+  border-radius: 0 0 3px 3px;
+  -webkit-box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset, 0 -5px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 2px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset, 0 -5px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 2px 4px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #212121 0%, #545454 100%);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.white.pressed {
+  border-top: 1px solid #787878;
+  border-left: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  -webkit-box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1) inset, -5px 5px 20px rgba(0, 0, 0, 0.2) inset, 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1) inset, -5px 5px 20px rgba(0, 0, 0, 0.2) inset, 0 0 3px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e8e8e8));
+  background: linear-gradient(to bottom, white 0%, #e8e8e8 100%);
+  outline: none;
+}
+
+.black.pressed {
+  -webkit-box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset, 0 -2px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 1px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2) inset, 0 -2px 2px 3px rgba(0, 0, 0, 0.6) inset, 0 1px 2px rgba(0, 0, 0, 0.5);
+  background: -webkit-gradient(linear, left top, right top, from(#454545), to(#212121));
+  background: linear-gradient(to right, #454545 0%, #212121 100%);
+  outline: none;
+}
+
+.offset {
+  margin: 0 0 0 -1rem;
+}
+
+#keyboard {
+  height: 15.25rem;
+  width: 41rem;
+  margin: 0.5rem auto;
+  padding: 3rem 0 0 3rem;
+  position: relative;
+  border: 1px solid #180901;
+  border-radius: 1rem;
+  background-color: #2d252d;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5) inset, 0 1px rgba(212, 152, 125, 0.2) inset, 0 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5) inset, 0 1px rgba(212, 152, 125, 0.2) inset, 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#keyboard li:first-child {
+  border-radius: 5px 0 5px 5px;
+}
+
+#keyboard li:last-child {
+  border-radius: 0 5px 5px 5px;
+}
+/*# sourceMappingURL=style.css.map */
